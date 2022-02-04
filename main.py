@@ -1,5 +1,5 @@
 import os
-from datetime import datetime
+import time
 
 class Backtrack:
 
@@ -99,8 +99,8 @@ class Backtrack:
 
 
 
-backtrackOutput = open('backtrack.csv', "w")
-branchboundOutput = open('branchbound.csv', "w")
+saida = open('resultado.csv', "w")
+saida.write("Arquivo;Nome do Aluno;Tempo Gasto(ms);Solucao Encontrada;Algoritmo\n")
 for file in os.listdir('files'):
     N = -1
     pesoMaximo = -1
@@ -118,16 +118,15 @@ for file in os.listdir('files'):
             else:
                 valores.append(v1)
                 pesos.append(v2)
-    inicioBacktrack = datetime.now()
+    inicioBacktrack = time.time()
     backtrack = Backtrack(valores, pesos, pesoMaximo, N)
     backtrack.knapsack(0)
-    fimBacktrack = datetime.now()
-    inicioBranchBound = datetime.now()
+    fimBacktrack = time.time()
+    inicioBranchBound = time.time()
     branchBound = BranchAndBound(valores, pesos, pesoMaximo, N)
     branchBound.knapsack(0)
-    fimBranchBound = datetime.now()
-    backtrackOutput.write(str(file)+";"+"Vitor Rodarte Ricoy"+";"+str((fimBacktrack-inicioBacktrack).total_seconds() * 1000)+";"+str(backtrack.melhorValor)+"\n")
-    branchboundOutput.write(str(file)+";"+"Vitor Rodarte Ricoy"+";"+str((fimBranchBound-inicioBranchBound).total_seconds() * 1000)+";"+str(branchBound.melhorValor)+"\n")
+    fimBranchBound = time.time()
+    saida.write(str(file)+";"+"Vitor Rodarte Ricoy"+";"+str((fimBacktrack-inicioBacktrack)*1000)+";"+str(backtrack.melhorValor)+";Backtrack\n")
+    saida.write(str(file)+";"+"Vitor Rodarte Ricoy"+";"+str((fimBranchBound-inicioBranchBound)*1000)+";"+str(branchBound.melhorValor)+";Branch and Bound\n")
 
-backtrackOutput.close()
-branchboundOutput.close()
+saida.close()

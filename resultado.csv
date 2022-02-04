@@ -1,0 +1,21 @@
+Arquivo;Nome do Aluno;Tempo Gasto(ms);Solucao Encontrada;Algoritmo
+f10_l-d_kp_20_879;Vitor Rodarte Ricoy;865.6101226806641;1025.0;Backtrack
+f10_l-d_kp_20_879;Vitor Rodarte Ricoy;15.997171401977539;1025.0;Branch and Bound
+f1_l-d_kp_10_269;Vitor Rodarte Ricoy;1.0035037994384766;295.0;Backtrack
+f1_l-d_kp_10_269;Vitor Rodarte Ricoy;0.9984970092773438;295.0;Branch and Bound
+f2_l-d_kp_20_878;Vitor Rodarte Ricoy;912.06955909729;1024.0;Backtrack
+f2_l-d_kp_20_878;Vitor Rodarte Ricoy;16.02911949157715;1024.0;Branch and Bound
+f3_l-d_kp_4_20;Vitor Rodarte Ricoy;0.0;35.0;Backtrack
+f3_l-d_kp_4_20;Vitor Rodarte Ricoy;0.0;35.0;Branch and Bound
+f4_l-d_kp_4_11;Vitor Rodarte Ricoy;0.0;23.0;Backtrack
+f4_l-d_kp_4_11;Vitor Rodarte Ricoy;0.0;23.0;Branch and Bound
+f5_l-d_kp_15_375;Vitor Rodarte Ricoy;25.998592376708984;481.06936799999795;Backtrack
+f5_l-d_kp_15_375;Vitor Rodarte Ricoy;2.0051002502441406;481.0693680000009;Branch and Bound
+f6_l-d_kp_10_60;Vitor Rodarte Ricoy;0.9920597076416016;52.0;Backtrack
+f6_l-d_kp_10_60;Vitor Rodarte Ricoy;1.0030269622802734;52.0;Branch and Bound
+f7_l-d_kp_7_50;Vitor Rodarte Ricoy;0.0;107.0;Backtrack
+f7_l-d_kp_7_50;Vitor Rodarte Ricoy;0.0;107.0;Branch and Bound
+f8_l-d_kp_23_10000;Vitor Rodarte Ricoy;6700.998067855835;9767.0;Backtrack
+f8_l-d_kp_23_10000;Vitor Rodarte Ricoy;7521.979093551636;9767.0;Branch and Bound
+f9_l-d_kp_5_80;Vitor Rodarte Ricoy;0.0;130.0;Backtrack
+f9_l-d_kp_5_80;Vitor Rodarte Ricoy;0.0;130.0;Branch and Bound
