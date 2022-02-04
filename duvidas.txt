@@ -1,0 +1,1 @@
+csv tem header? São dois csvs? O tempo é em segundos ou ms?
